@@ -22,9 +22,17 @@ viewModel.someFlow.collectWhenResumed(owner = viewLifecycleOwner) {
     Log.d("Collected item:", it)
 }
 ```
+Note: To recreate the same behaviour as with LiveData, use `collectWhenStarted()`.
 
 ## Setup
-
+```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
 ```groovy
 dependencies {
     implementation 'com.github.sebschaef:LifecycleCollector:0.1.1'
