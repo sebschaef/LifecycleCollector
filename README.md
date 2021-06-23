@@ -41,12 +41,14 @@ dependencies {
 
 ## How it works
 It uses currently the experimental `androidx.lifecycle:lifecycle-runtime-ktx` under the hood, which
-supports the `repeatOnLifecycle()` functionality to match the same behaviour as with LiveData.
+supports the `repeatOnLifecycle()` functionality to restart a flow collection after it left the
+wanted lifecycle scope and re-enters it.
 
-The convenience functions are no suspend functions and will handle the launch of a coroutine
-themselves. They will launch it in the lifecycleScope of the current LifecycleOwner and only collect
-the given flow inside the specific scope (CREATED, STARTED, RESUMED). When the scope is left, the
-collection is canceled. If the LifecycleOwner re-enters the scope, the collection is restarted.
+The convenience functions are no suspend functions and will handle the launch of a Coroutine
+themselves. They will launch it in the `lifecycleScope` of the current `LifecycleOwner` and only
+collect the given flow inside the specific scope (`CREATED`, `STARTED`, `RESUMED`). When the scope
+is left, the collection is canceled. If the `LifecycleOwner` re-enters the scope, the collection is
+restarted.
 
 See the demo application for more details:
 
