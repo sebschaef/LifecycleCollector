@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LifecycleCollector</string>
+
+    <string name="lifecyclecollector_whenStarted_basicflow">Basic flow collection when started:</string>
+    <string name="lifecyclecollector_whenStarted_basicflow_details">A cold flow is exposed through the ViewModel. When the Activity is <b>STARTED</b>, it starts to collect it and turns into a hot flow.<br/>This is basically the amount of seconds since the last collection start.</string>
+
+    <string name="lifecyclecollector_whenStarted_stateflow">Lazy StateFlow collection when started:</string>
+    <string name="lifecyclecollector_whenStarted_stateflow_details">A lazy StateFlow is exposed through the ViewModel. When the Activity is <b>STARTED</b> the first time, it turns it into a hot flow. It will continue to emit values even if no observer is collecting it.<br/>This is basically the amount of seconds since the first collection time.</string>
+
+    <string name="lifecyclecollector_whenStarted_basiccontinuousflow">Basic continuous flow collection when started:</string>
+    <string name="lifecyclecollector_whenStarted_basiccontinuousflow_details">A cold flow is exposed through the ViewModel. When the Activity is <b>STARTED</b>, it starts to collect it. When the collection stops, it remembers its value.<br/>This is basically the amount of seconds of the total collection time.</string>
+</resources>

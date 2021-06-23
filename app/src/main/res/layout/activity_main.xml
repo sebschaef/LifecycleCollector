@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".demo.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- region basic flow when started -->
+        <TextView
+            android:id="@+id/whenStartedBasicFlowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="@string/lifecyclecollector_whenStarted_basicflow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/whenStartedBasicFlowValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            tools:text="42"
+            app:layout_constraintStart_toEndOf="@id/whenStartedBasicFlowTitle"
+            app:layout_constraintTop_toTopOf="@id/whenStartedBasicFlowTitle"
+            app:layout_constraintBottom_toBottomOf="@id/whenStartedBasicFlowTitle" />
+
+        <TextView
+            android:id="@+id/whenStartedBasicFlowDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="12sp"
+            android:text="@string/lifecyclecollector_whenStarted_basicflow_details"
+            app:layout_constraintTop_toBottomOf="@id/whenStartedBasicFlowTitle" />
+
+        <View
+            android:id="@+id/separator0"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintTop_toBottomOf="@id/whenStartedBasicFlowDetails"/>
+        <!-- endregion -->
+
+        <!-- region StateFlow when started -->
+        <TextView
+            android:id="@+id/whenStartedStateFlowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="@string/lifecyclecollector_whenStarted_stateflow"
+            app:layout_constraintTop_toBottomOf="@id/separator0"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/whenStartedStateFlowValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            tools:text="42"
+            app:layout_constraintStart_toEndOf="@id/whenStartedStateFlowTitle"
+            app:layout_constraintTop_toTopOf="@id/whenStartedStateFlowTitle"
+            app:layout_constraintBottom_toBottomOf="@id/whenStartedStateFlowTitle" />
+
+        <TextView
+            android:id="@+id/whenStartedStateFlowDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="12sp"
+            android:text="@string/lifecyclecollector_whenStarted_stateflow_details"
+            app:layout_constraintTop_toBottomOf="@id/whenStartedStateFlowTitle" />
+
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintTop_toBottomOf="@id/whenStartedStateFlowDetails"/>
+        <!-- endregion -->
+
+        <!-- region basic continuous flow when started -->
+        <TextView
+            android:id="@+id/whenStartedBasicContinuousFlowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="@string/lifecyclecollector_whenStarted_basiccontinuousflow"
+            app:layout_constraintTop_toBottomOf="@id/separator1"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/whenStartedBasicContinuousFlowValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            tools:text="42"
+            app:layout_constraintStart_toEndOf="@id/whenStartedBasicContinuousFlowTitle"
+            app:layout_constraintTop_toTopOf="@id/whenStartedBasicContinuousFlowTitle"
+            app:layout_constraintBottom_toBottomOf="@id/whenStartedBasicContinuousFlowTitle" />
+
+        <TextView
+            android:id="@+id/whenStartedBasicContinuousFlowDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="12sp"
+            android:text="@string/lifecyclecollector_whenStarted_basiccontinuousflow_details"
+            app:layout_constraintTop_toBottomOf="@id/whenStartedBasicContinuousFlowTitle" />
+
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintTop_toBottomOf="@id/whenStartedBasicContinuousFlowDetails"/>
+        <!-- endregion -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
