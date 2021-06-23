@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/sebschaef/LifecycleCollector.svg)](https://jitpack.io/#sebschaef/LifecycleCollector)
+
 # LifecycleCollector
 This library provides you convenience extension functions to easier collect Kotlin Flows
 lifecycle-aware from an Android component, such as Activity or Fragments. It gives you a
