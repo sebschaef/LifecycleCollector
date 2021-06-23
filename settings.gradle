@@ -1,4 +1,3 @@
 rootProject.name = "LifecycleCollector"
 include ':app'
-include ':app:lifecyclecollector'
 include ':lifecyclecollector'
