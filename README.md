@@ -25,7 +25,7 @@ viewModel.someFlow.collectWhenResumed(owner = viewLifecycleOwner) {
 
 ```groovy
 dependencies {
-    implementation 'com.github.sebschaef:LifecycleCollector:0.1.0'
+    implementation 'com.github.sebschaef:LifecycleCollector:0.1.1'
 }
 ```
 
