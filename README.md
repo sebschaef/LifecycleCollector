@@ -39,4 +39,5 @@ the given flow inside the specific scope (CREATED, STARTED, RESUMED). When the s
 collection is canceled. If the LifecycleOwner re-enters the scope, the collection is restarted.
 
 See the demo application for more details:
-<img src="https://sebschaef.bitbucket.io/images/screen_lifecyclecollector.gif" width="200">
+
+<img src="https://sebschaef.bitbucket.io/images/screen_lifecyclecollector.gif" width="250">
