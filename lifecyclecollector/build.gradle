@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 31
-        versionCode 6
-        versionName "0.2.4"
+        versionCode 7
+        versionName "0.2.5"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -36,4 +36,18 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-alpha03"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.sebschaef.lifecyclecollector'
+                artifactId = 'final'
+                version = '0.2.5'
+            }
+        }
+    }
 }
