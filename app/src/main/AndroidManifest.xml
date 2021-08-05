@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sebschaef.lifecyclecollector">
+    package="com.sebschaef.lifecyclecollector.demo">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifecycleCollector">
         <activity
-            android:name=".demo.MainActivity"
+            android:name=".MainActivity"
             android:theme="@style/Theme.LifecycleCollector.NoActionBar">
 
             <intent-filter>

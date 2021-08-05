@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.sebschaef.lifecyclecollector.collectWhenStarted
-import com.sebschaef.lifecyclecollector.databinding.ActivityMainBinding
+import com.sebschaef.lifecyclecollector.demo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
