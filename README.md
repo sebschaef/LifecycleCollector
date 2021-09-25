@@ -35,7 +35,7 @@ allprojects {
 ```
 ```groovy
 dependencies {
-    implementation 'com.github.sebschaef:LifecycleCollector:0.2.5'
+    implementation 'com.github.sebschaef:LifecycleCollector:0.9.0'
 }
 ```
 
