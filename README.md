@@ -35,12 +35,12 @@ allprojects {
 ```
 ```groovy
 dependencies {
-    implementation 'com.github.sebschaef:LifecycleCollector:0.9.0'
+    implementation 'com.github.sebschaef:LifecycleCollector:1.0.0'
 }
 ```
 
 ## How it works
-It uses currently the experimental `androidx.lifecycle:lifecycle-runtime-ktx` under the hood, which
+It uses the `androidx.lifecycle:lifecycle-runtime-ktx` under the hood, which
 supports the `repeatOnLifecycle()` functionality to restart a flow collection after it left the
 wanted lifecycle scope and re-enters it.
 
